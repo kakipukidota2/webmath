@@ -1,0 +1,135 @@
+body::before {
+    content: "";
+    background-image: url("../images/hand-drawn-scientific-formulas-chalkboard_23-2148496321.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px); /* Уровень размытия */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+body {
+    background-image: none; /* Убираем фоновое изображение из основного body */
+    height: 100vh;
+}
+
+.text {
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 700px;
+    height: 200px;
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 7px solid black;
+    font-size: 24px;
+}
+p {
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    position: fixed; /* Используем позиционирование "fixed" для фиксированного размещения */
+    bottom: 20px; /* Расстояние снизу */
+    right: 20px; /* Расстояние справа */
+    border: 3px solid black;
+    font-size: 30px;
+    padding: 6px 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-size: 24px;
+}
+#start{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    padding: 6px 10px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 15px;
+    border: 7px solid black;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+#start:hover{
+    background-color: #808080;
+}
+/* siski zhopa .element {
+     background-color: #3498db;
+     transition: background-color 0.3s ease; /* Добавление перехода для цвета фона
+}
+
+.element:hover {
+    background-color: #e74c3c; /* Новый цвет фона при наведении курсора
+}*/
+/* Mobile Styles */
+.text {
+    /* Define styles for mobile here */
+    width: 90%; /* Adjust the width for mobile devices */
+}
+
+p {
+    /* Define styles for mobile here */
+    font-size: 18px; /* Adjust font size for mobile devices */
+}
+
+#start {
+    /* Define styles for mobile here */
+    font-size: 40px; /* Adjust font size for mobile devices */
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .text {
+        /* Define styles for tablets here */
+        width: 500px;
+    }
+
+    p {
+        /* Define styles for tablets here */
+        font-size: 24px;
+    }
+
+    #start {
+        /* Define styles for tablets here */
+        font-size: 50px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .text {
+        /* Define styles for desktop here */
+        width: 700px;
+    }
+
+    p {
+        /* Define styles for desktop here */
+        font-size: 30px;
+    }
+
+    #start {
+        /* Define styles for desktop here */
+        font-size: 60px;
+    }
+}
